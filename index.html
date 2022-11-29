@@ -7,6 +7,70 @@
     <title>TypeScript Form</title>
 </head>
 <body>
-    
+    <div id="app">
+        <form id="form">
+          <p>
+            <ul id="errors"></ul>
+          </p>
+          <p>
+          <label>
+            Nombre*:
+            <input type="text" name="name" id="name">
+          </label>
+          </p>
+          <p>
+            <label>
+              Teléfono*:
+              <input type="text" name="phone" id="phone">
+            </label>
+          </p>
+          <p>
+            <label>
+              Email:
+              <input type="text" name="email" id="email">
+            </label>
+          </p>
+          <p>
+            <label>
+              Motivo de la consulta:
+              <select type="text" name="reason" id="reason">
+                <option>Sin motivo</option>
+                <option>Error en el envío</option>
+                <option>Dudas sobre mi pedido</option>
+                <option>Seguimiento del pedido</option>
+                <option>Hacer una reclamación</option>
+              </select>
+            </label>
+          </p>
+          <p>
+            <label>
+              Horario de llamada:
+              <select type="text" name="calltime" id="calltime">
+                <option>Indiferente</option>
+                <option>08:00 - 08:30</option>
+                <option>08:30 - 09:00</option>
+                <option>09:00 - 09:30</option>
+                <option>09:30 - 10:00</option>
+                <option>10:00 - 10:30</option>
+                <option>10:30 - 11:00</option>
+                <option>11:00 - 11:30</option>
+                <option>11:30 - 12:00</option>
+              </select>
+            </label>
+          </p>
+          <p>
+            <label>
+              Mensaje*:
+              <textarea type="text" name="message" id="message"></textarea>
+            </label>
+          </p>
+          <p>
+            <input type="button" id="save" value="Guardar">
+          </p>
+        </form>
+  
+        <div id="result"></div>
+      </div>
+      <script src="./main.ts"></script>
 </body>
 </html>
